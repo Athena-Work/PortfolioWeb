@@ -13,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      {/* header */}
+      <body className='px-5 md:px-10'>
+        <header className='w-full h-[64px] bg-red-500'></header>
+        {children}
+        <footer className='w-full h-[260px] bg-blue-500'></footer>
+      </body>
     </html>
   );
 }
