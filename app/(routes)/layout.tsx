@@ -1,4 +1,10 @@
+// Next
 import type { Metadata } from "next";
+
+// Components
+import Header from "../components/layout/Header";
+
+// CSS
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,10 +20,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       {/* header */}
-      <body className='px-5 md:px-10'>
-        <header className='w-full h-[64px] bg-red-500'></header>
+      <body className='min-w-full min-h-screen px-5 md:px-26 bg-background'>
+        <Header />
         {children}
+<<<<<<< HEAD
         {/* <footer className='w-full h-[260px] bg-blue-500'></footer> */}
+=======
+        <footer className='w-full h-[260px] bg-blue-500 mt-10'></footer>
+>>>>>>> b16567f91e9c1d11a4b6d58d15ab11ed34a37688
       </body>
     </html>
   );
