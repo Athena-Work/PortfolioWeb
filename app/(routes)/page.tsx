@@ -1,3 +1,4 @@
+import ExperiencesSection from "../components/home_page/ExperiencesSection";
 import HeroSection from "../components/home_page/HeroSection";
 import ProjectsSection from "../components/home_page/ProjectsSection";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main className='flex flex-col gap-32'>
       <HeroSection />
       <ProjectsSection />
+      <ExperiencesSection />
     </main>
   );
 }
