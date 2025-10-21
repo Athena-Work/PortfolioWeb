@@ -24,6 +24,7 @@ export default function ExperiencesSection() {
 
       {/* Experiences */}
       <div className='flex flex-col md:flex-row gap-5 md:gap-40'>
+        {/* Tab Selector */}
         <ul className='shrink-0 flex md:flex-col w-full md:w-auto overflow-auto'>
           {experiences.map((experience) => {
             return (
@@ -50,6 +51,7 @@ export default function ExperiencesSection() {
           })}
         </ul>
 
+        {/* Tabs */}
         <div className='relative grow'>
           <AnimatePresence mode='wait'>
             {experiences.map((experience) => {
