@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function MobileDropDown() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,8 +32,14 @@ export default function MobileDropDown() {
         } bg-secondary100 rounded-md overflow-hidden`}
       >
         <ul className='flex flex-col gap-7 m-0'>
-          <li className='text-xl text-white font-[500]'>Home</li>
-          <li className='text-xl text-white font-[500]'>Projects</li>
+          <Link href='/'>
+            <li className='text-xl text-white font-[500]'>Home</li>
+          </Link>
+
+          <Link href='/projects'>
+            <li className='text-xl text-white font-[500]'>Projects</li>
+          </Link>
+
           <li className='text-xl text-white font-[500]'>About</li>
           <li className='text-xl text-white font-[500]'>Get In Touch</li>
         </ul>

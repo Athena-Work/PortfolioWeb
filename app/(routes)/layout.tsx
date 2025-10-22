@@ -24,7 +24,6 @@ export default function RootLayout({
         <Header />
         {children}
         <footer className='w-full h-[260px] bg-blue-500 mt-10'></footer>
-
       </body>
     </html>
   );
