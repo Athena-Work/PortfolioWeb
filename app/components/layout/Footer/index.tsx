@@ -1,8 +1,7 @@
-// Icons
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import Link from "next/link";
+
+// Components
+import LinksSection from "./LinksSection";
 
 export default function Footer() {
   return (
@@ -13,29 +12,7 @@ export default function Footer() {
               md:flex-col gap-6 text-center lg:flex-row 
             '
       >
-        <div className='flex flex-row gap-5  md:gap-6 text-[var(--color-secondary100)] items-center  lg:gap-6'>
-          <p className='font-[600] text-xl cursor-pointer hover:text-primary '>
-            Home
-          </p>
-          <p className='font-[600] text-xl cursor-pointer  hover:text-primary '>
-            Projects
-          </p>
-          <p className='font-[600] text-xl cursor-pointer  hover:text-primary '>
-            About
-          </p>
-          <p className='font-[600] text-xl cursor-pointer  hover:text-primary  '>
-            Contact
-          </p>
-        </div>
-        <div className='flex flex-row gap-5 text-[var(--color-secondary100)] font-[600] justify-center cursor-pointer'>
-          <InstagramIcon fontSize='large' className='hover:text-primary' />
-          <LinkedInIcon fontSize='large' className='hover:text-primary' />
-          <GitHubIcon fontSize='large' className='hover:text-primary' />
-          <SportsBasketballIcon
-            fontSize='large'
-            className='hover:text-primary'
-          />
-        </div>
+        <LinksSection />
       </div>
 
       <div className='px-3 py-6 flex flex-col gap-6 items-center md:items-center  md:text-center lg:items-start lg:text-left '>
@@ -44,12 +21,17 @@ export default function Footer() {
           <span className='text-primary'>?</span>
         </div>
         <div className='flex flex-col md:flex-row gap-4 items-center'>
-          <button className='px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary100 transition font-[600]'>
-            Get in Touch
-          </button>
-          <button className='px-6 py-3 bg-background text-gray-800 hover:bg-gray5 hover:text-white rounded-lg transition font-[600]'>
-            Browse Projects
-          </button>
+          <Link href='/contact'>
+            <button className='px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary100 transition font-[600] cursor-pointer'>
+              Get in Touch
+            </button>
+          </Link>
+          <Link href='/projects'>
+            {" "}
+            <button className='px-6 py-3 bg-background text-gray-800 hover:bg-gray5 hover:text-white rounded-lg transition font-[600] cursor-pointer'>
+              Browse Projects
+            </button>
+          </Link>
         </div>
       </div>
     </footer>

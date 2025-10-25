@@ -27,21 +27,26 @@ export default function MobileDropDown() {
       </button>
 
       <nav
-        className={`absolute left-0 top-full w-full ${
+        className={`absolute z-[100] left-0 top-full w-full ${
           isOpen ? "max-h-[500px] p-3" : "max-h-0 p-0"
         } bg-secondary100 rounded-md overflow-hidden`}
       >
         <ul className='flex flex-col gap-7 m-0'>
-          <Link href='/'>
+          <Link href='/' onClick={() => setIsOpen(false)}>
             <li className='text-xl text-white font-[500]'>Home</li>
           </Link>
 
-          <Link href='/projects'>
+          <Link href='/projects' onClick={() => setIsOpen(false)}>
             <li className='text-xl text-white font-[500]'>Projects</li>
           </Link>
 
-          <li className='text-xl text-white font-[500]'>About</li>
-          <li className='text-xl text-white font-[500]'>Get In Touch</li>
+          <Link href='/about' onClick={() => setIsOpen(false)}>
+            <li className='text-xl text-white font-[500]'>About</li>
+          </Link>
+
+          <Link href='/contact' onClick={() => setIsOpen(false)}>
+            <li className='text-xl text-white font-[500]'>Get In Touch</li>
+          </Link>
         </ul>
       </nav>
     </div>
