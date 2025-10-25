@@ -11,8 +11,6 @@ export default async function Page({
   const project = projects.find(
     (item) => item.title.toLowerCase() === slug.toLowerCase()
   );
-
-<<<<<<< HEAD
   if (!project) {
     return <div>Project not found</div>;
   }
@@ -179,7 +177,6 @@ export default async function Page({
       </div>
     </section>
   );
-=======
-  return <div></div>;
->>>>>>> 683a0b3f835a3d752e8c47e6caf4cafccf1db116
+
+
 }
