@@ -5,7 +5,7 @@ import Image from "next/image";
 import ArrowIcon from "@/public/icons/arrow";
 
 // Constants
-import { projects } from "@/app/utils/homepage.constants";
+import { projects } from "@/app/utils/projects.constants";
 
 export default function ProjectsSection() {
   return (
