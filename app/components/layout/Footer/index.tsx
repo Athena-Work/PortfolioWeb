@@ -5,7 +5,7 @@ import LinksSection from "./LinksSection";
 
 export default function Footer() {
   return (
-    <footer className='bottom-0 left-0 w-full bg-background z-0 mt-20'>
+    <footer className='w-full mt-20'>
       <div
         className='
               flex flex-col justify-between items-center px-3 py-3

@@ -6,7 +6,7 @@ import MobileDropDown from "./MobileDropDown";
 import DesktopMenu from "./DesktopMenu";
 
 // Icons
-import ContactIcon from "@/public/icons/contact";
+// import ContactIcon from "@/public/icons/";
 
 export default function Header() {
   return (
@@ -26,7 +26,7 @@ export default function Header() {
       <div className='min-w-[80px] hidden md:flex justify-end'>
         <Link href='/contact'>
           <div className='shrink-0 w-8 h-8 flex justify-center items-center rounded-full bg-secondary200'>
-            <ContactIcon />
+            {/* <ContactIcon /> */}
           </div>
         </Link>
       </div>

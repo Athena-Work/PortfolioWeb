@@ -1,16 +1,37 @@
 @import "tailwindcss";
 
 /* --------------------------- Theme ------------------------------- */
+
 @theme {
   --text-md: 16px;
+
   --color-background: #fcfcfd;
   --color-primary: #6e06f2;
-  --color-primary100:#8D3DF6;
+  --color-primary100: #8d3df6;
   --color-secondary100: #4e525a;
   --color-secondary200: #24262f;
-  --color-gray5:#23262F;
-}
+  --color-gray5: #23262f;
 
+  --shadow-shadow1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --animate-infinite-scroll-left: scroll-left 25s linear infinite;
+  --animate-infinite-scroll-right: scroll-right 25s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 /* --------------------------- Fonts ------------------------------- */
 @font-face {
   font-family: "ROBOTO";
