@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 // Components
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 // CSS
 import "./globals.css";
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className='min-w-full min-h-screen px-5 md:px-26 bg-background'>
         <Header />
         {children}
-        <footer className='w-full h-[260px] bg-blue-500 mt-10'></footer>
+        <Footer />
       </body>
     </html>
   );
