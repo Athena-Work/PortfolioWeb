@@ -99,7 +99,7 @@ export default function ProjectPage() {
             width={0}
             height={0}
             sizes="100vw"
-     className="w-full h-auto md:h-full md:object-cover"
+            className="w-full h-auto md:h-full md:object-cover"
             alt="TaskFlow"
           />
         </div>
@@ -119,11 +119,19 @@ export default function ProjectPage() {
               md:flex-col gap-6 text-center lg:flex-row 
             "
           >
-            <div className="flex flex-row   md:gap-6 text-[var(--color-secondary100)] items-center  lg:gap-6">
-              <p className="font-[600] text-xl cursor-pointer">Home</p>
-              <p className="font-[600] text-xl cursor-pointer">Projects</p>
-              <p className="font-[600] text-xl cursor-pointer">About</p>
-              <p className="font-[600] text-xl cursor-pointer">Contact</p>
+            <div className="flex flex-row gap-5  md:gap-6 text-[var(--color-secondary100)] items-center  lg:gap-6">
+              <p className="font-[600] text-xl cursor-pointer hover:text-primary ">
+                Home
+              </p>
+              <p className="font-[600] text-xl cursor-pointer  hover:text-primary ">
+                Projects
+              </p>
+              <p className="font-[600] text-xl cursor-pointer  hover:text-primary ">
+                About
+              </p>
+              <p className="font-[600] text-xl cursor-pointer  hover:text-primary  ">
+                Contact
+              </p>
             </div>
             <div className="flex flex-row gap-5 text-[var(--color-secondary100)] font-[600] justify-center">
               <InstagramIcon fontSize="large" />
@@ -136,10 +144,10 @@ export default function ProjectPage() {
           <div className="px-3 py-6 flex flex-col gap-6 items-center md:items-center  md:text-center lg:items-start lg:text-left ">
             <div className="text-[var(--color-secondary100)] font-[600] text-2xl md:text-xl md:items-center md:text-center  ">
               Interested in working together
-              <span className="text-[var(--color-primary)]">?</span>
+              <span className="text-primary">?</span>
             </div>
             <div className="flex flex-col md:flex-row gap-4 items-center">
-              <button className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-purple-800 transition font-[600]">
+              <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-purple-800 transition font-[600]">
                 Get in Touch
               </button>
               <button className="px-6 py-3 bg-background text-gray-800 hover:bg-gray-300 transition font-[600]">
