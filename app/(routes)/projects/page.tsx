@@ -133,11 +133,14 @@ export default function ProjectPage() {
                 Contact
               </p>
             </div>
-            <div className="flex flex-row gap-5 text-[var(--color-secondary100)] font-[600] justify-center">
-              <InstagramIcon fontSize="large" />
-              <LinkedInIcon fontSize="large" />
-              <GitHubIcon fontSize="large" />
-              <SportsBasketballIcon fontSize="large" />
+            <div className="flex flex-row gap-5 text-[var(--color-secondary100)] font-[600] justify-center cursor-pointer">
+              <InstagramIcon fontSize="large" className="hover:text-primary" />
+              <LinkedInIcon fontSize="large" className="hover:text-primary" />
+              <GitHubIcon fontSize="large" className="hover:text-primary" />
+              <SportsBasketballIcon
+                fontSize="large"
+                className="hover:text-primary"
+              />
             </div>
           </div>
 
@@ -147,10 +150,10 @@ export default function ProjectPage() {
               <span className="text-primary">?</span>
             </div>
             <div className="flex flex-col md:flex-row gap-4 items-center">
-              <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-purple-800 transition font-[600]">
+              <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary100 transition font-[600]">
                 Get in Touch
               </button>
-              <button className="px-6 py-3 bg-background text-gray-800 hover:bg-gray-300 transition font-[600]">
+              <button className="px-6 py-3 bg-background text-gray-800 hover:bg-gray5 hover:text-white rounded-lg transition font-[600]">
                 Browse Projects
               </button>
             </div>

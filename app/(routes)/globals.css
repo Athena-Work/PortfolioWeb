@@ -5,8 +5,10 @@
   --text-md: 16px;
   --color-background: #fcfcfd;
   --color-primary: #6e06f2;
+  --color-primary100:#8D3DF6;
   --color-secondary100: #4e525a;
   --color-secondary200: #24262f;
+  --color-gray5:#23262F;
 }
 
 /* --------------------------- Fonts ------------------------------- */
