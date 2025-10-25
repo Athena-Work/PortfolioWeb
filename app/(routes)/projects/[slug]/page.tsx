@@ -10,5 +10,5 @@ export default async function Page({
     (item) => item.title.toLowerCase() === slug
   )[0];
 
-  return <div>{project.description}</div>;
+  return <div></div>;
 }

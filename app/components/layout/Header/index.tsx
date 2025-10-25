@@ -1,5 +1,9 @@
+// Next
+import Link from "next/link";
+
 // Components
 import MobileDropDown from "./MobileDropDown";
+import DesktopMenu from "./DesktopMenu";
 
 // Icons
 import ContactIcon from "@/public/icons/contact";
@@ -15,16 +19,16 @@ export default function Header() {
 
       {/* Manu */}
       <ul className='hidden md:flex gap-7 m-0'>
-        <li className='text-lg text-secondary100 font-[500]'>Home</li>
-        <li className='text-lg text-secondary100 font-[500]'>Projects</li>
-        <li className='text-lg text-secondary100 font-[500]'>About</li>
+        <DesktopMenu />
       </ul>
 
       {/* Contact */}
       <div className='min-w-[80px] hidden md:flex justify-end'>
-        <div className='shrink-0 w-8 h-8 flex justify-center items-center rounded-full bg-secondary200'>
-          <ContactIcon />
-        </div>
+        <Link href='/contact'>
+          <div className='shrink-0 w-8 h-8 flex justify-center items-center rounded-full bg-secondary200'>
+            <ContactIcon />
+          </div>
+        </Link>
       </div>
 
       <MobileDropDown />
