@@ -110,3 +110,41 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+interface Skill {
+  id: number;
+  title: string;
+  skills: string[];
+}
+export const skills: Skill[] = [
+  {
+    id: 1,
+    title: "Web Design",
+    skills: [
+      "UI/UX Design",
+      "Responsive Design",
+      "Wireframing",
+      "User Research",
+    ],
+  },
+  {
+    id: 2,
+    title: "Frontend",
+    skills: ["Javascript", "ReactJS", "NextJS", "CSS3"],
+  },
+  {
+    id: 3,
+    title: "Backend",
+    skills: ["NodeJs", "MondoDB", "ExpressJS", "Vercel"],
+  },
+  {
+    id: 4,
+    title: "Soft Skills",
+    skills: [
+      "Effective communication",
+      "Collaboration",
+      "Commitment",
+      "Leadership",
+    ],
+  },
+];
