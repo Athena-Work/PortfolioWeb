@@ -11,7 +11,6 @@ export default async function Page({
   const project = projects.find(
     (item) => item.title.toLowerCase() === slug.toLowerCase()
   );
-
   if (!project) {
     return <div>Project not found</div>;
   }

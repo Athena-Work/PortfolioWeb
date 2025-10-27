@@ -1,5 +1,9 @@
+"use client";
+
+import MyStorySection from "@/app/components/home_page/MyStorySection";
 import EarthDrag from "./components/Globe";
 import InfiniteScroll from "./components/InfiniteScroll";
+import AboutExperienceSection from "./components/AboutExperienceSection";
 
 export default function AboutPage() {
   return (
@@ -20,7 +24,8 @@ export default function AboutPage() {
         </span>
       </div>
 
-      <div className='flex flex-col md:flex-row flex-wrap gap-12'>
+      {/* Cards */}
+      <div className='flex flex-col md:flex-row flex-wrap gap-12 mb-30'>
         {/* First Card */}
         <div className='w-full md:w-[417px] flex flex-col gap-3.5'>
           {/* Title */}
@@ -71,6 +76,12 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      {/* My Story */}
+      <MyStorySection />
+
+      {/* Experiences */}
+      <AboutExperienceSection />
     </main>
   );
 }

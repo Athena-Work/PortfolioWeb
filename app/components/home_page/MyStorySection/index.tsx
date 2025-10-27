@@ -1,7 +1,6 @@
 export default function MyStorySection() {
   return (
     <section className='w-full'>
-      {/* Title */}
       <div className='flex items-baseline gap-[2px] mb-5'>
         <h2 className='text-[56px] font-[800] text-secondary200'>My Story</h2>
         <div className='w-[10px] h-[10px] rounded-full bg-primary' />
